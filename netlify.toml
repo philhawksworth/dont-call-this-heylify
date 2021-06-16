@@ -1,0 +1,17 @@
+[build] 
+  publish = "dist"
+  command = "npm run build"
+
+[dev] 
+  publish = "dist"
+  command = "npm run serve"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[plugins]]
+  package = "../plugin"
+
+[[plugins]]
+  package = "@netlify/plugin-local-install-core"
+
