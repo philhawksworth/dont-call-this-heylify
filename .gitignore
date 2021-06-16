@@ -1,0 +1,8 @@
+# Local Netlify folder
+.netlify
+.env
+node_modules
+dist
+# @netlify/plugin-ohai ignores start
+netlify/functions/ohai-function
+# @netlify/plugin-ohai ignores end

@@ -1,0 +1,25 @@
+<html>
+    <head>
+      <title>{{ title }}</title>
+      <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+      <header>
+        <p>
+          <a href="/">Home</a> |
+          <a href="/about/">About</a> |
+          <a href="/blog/">Blog</a>
+        </p>
+        <h1>{{ title }}</h1>
+      </header>
+      <div class="container">
+      {{ content | safe }}
+      </div>
+      <footer>
+        <div class="container">
+          <p>This project was never going to be called Journalify. Whoever says that is lying.</p>
+          <p>View the code on <a href="{{ pkg.homepage }}">GitHub</a></p>
+        </div>
+        </footer>
+    </body>
+    </html>
